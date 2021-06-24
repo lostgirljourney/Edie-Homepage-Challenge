@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <meta name="theme-color" content="var(--fontcol)" />
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
+  <meta http-equiv='pragma' content='no-cache'>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Montserrat&family=Poppins&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/favicon.png" />
+  <title>Edie Homepage</title>
+</head>
+
+<body id="body-id">
+
+  <nav>
+    <div id="body-title">
+      <a href="#">
+        <span id="title-text" class="edie">Edie</span>
+      </a>
+    </div>
+
+    <div id="nav-items">
+      <input type="checkbox" id="check" onclick="JavaScript:clicksOpen()">
+      <label for="check" class="checkbtn">
+        <i class="material-icons menu">menu</i>
+      </label>
+      <label for="check" class="checkbtnclose">
+        <i class="material-icons close">close</i>
+      </label>
+
+      <input type="checkbox" id="check-low" onclick="JavaScript:darkLight()">
+      <label for="check-low" class="light_mode">
+        <i class="material-icons light_mode">light_mode</i>
+      </label>
+      <label for="check-low" class="dark_mode">
+        <i class="material-icons dark_mode">dark_mode</i>
+      </label>
+
+      <ul id="nav-item">
+        <li id="home-div" class="c-text">
+          <a href="#home" class="styling" onclick="JavaScript:clicksClose()">
+            <span id="home-text" class="ctext">Home</span>
+          </a>
+        </li>
+        <li id="collect-div" class="c-text">
+          <a href="#service" onclick="JavaScript:clicksClose()">
+            <span id="collect-text" class="ctext">Services</span>
+          </a>
+        </li>
+        <li id="about-div" class="c-text">
+          <a href="#work" onclick="JavaScript:clicksClose()">
+            <span id="about-text" class="ctext">Our Works</span>
+          </a>
+        </li>
+        <li id="contact-div" class="c-text">
+          <a href="#client" onclick="JavaScript:clicksClose()">
+            <span id="contact-text" class="ctext">Clients</span>
+          </a>
+        </li>
+        <li id="contact-div" class="c-text">
+          <a href="#contact" onclick="JavaScript:clicksClose()">
+            <span id="contact-text" class="ctext">Contact</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div id="home">
+      <p id="m1" class="starter">
+        Unhappy with your website?
+      </p>
+
+      <p id="m2" class="starter">
+        We create beautiful and fast web services
+      </p>
+
+      <img src="assets/banners/heroImage.jpg" alt="Hero Image" id="heroimg">
+
+      <p id="m3" class="starter">
+        Story, emotion and purpose
+      </p>
+
+      <p id="m4" class="starter">
+        We help transform your ideas into real world applications that will outperform your toughest competition and
+        help you achieve your strategic goals in short period of time.
+      </p>
+
+      <label for="mail">
+        <p id="m5" class="starter">Want us to contact you?</p>
+        <span>
+          <input type="email" name="email" id="mail" placeholder="Email" class="starter">
+          <input type="button" value="Join" class="starter" id="subbtn">
+        </span>
+      </label>
+    </div>
+
+    <div id="service">
+
+      <p id="s1" class="starter subtitles">
+        We offer high demand services
+      </p>
+
+      <div class="row">
+        <div class="col3" id="coll1">
+          <div class="div-icons" id="blue">
+            <i class='material-icons edit'>edit</i>
+          </div>
+
+          <p class="titles">
+            UI/UX Design
+          </p>
+
+          <p class="descriptions">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis
+            turpis.
+          </p>
+
+          <input type="button" value="Get started" class="serbtn starter">
+
+        </div>
+
+        <div class="col3" id="coll2">
+          <div class="div-icons" id="green">
+            <i class='material-icons code'>code</i>
+          </div>
+
+          <p class="titles">
+            Front End
+          </p>
+
+          <p class="descriptions">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis
+            turpis.
+          </p>
+
+          <input type="button" value="Get started" class="serbtn starter">
+
+        </div>
+
+        <div class="col3" id="coll3">
+          <div class="div-icons" id="pink">
+            <i class="material-icons storage">
+              storage
+            </i>
+          </div>
+
+          <p class="titles">
+            Back End
+          </p>
+
+          <p class="descriptions">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis
+            turpis.
+          </p>
+
+          <input type="button" value="Get started" class="serbtn starter">
+
+        </div>
+      </div>
+    </div>
+
+    <div id="work">
+      <p id="w1" class="starter subtitles">
+        Good design means good business
+      </p>
+
+      <div class="row wr">
+        <div class="col1" id="col-1">
+          <div class="img-col1" id="img-1"></div>
+          <p class="mini-titles">
+            Full stack application
+          </p>
+          <p class="application">
+            Smart home dashboard
+          </p>
+        </div>
+
+        <div class="col2" id="col-2">
+          <div class="img-col2" id="img-2"></div>
+          <p class="mini-titles">
+            UX/UI design
+          </p>
+          <p class="application">
+            Onboard application
+          </p>
+        </div>
+      </div>
+
+      <div class="row wr">
+        <div class="col1" id="col-1">
+          <div class="img-col1" id="img-3"></div>
+          <p class="mini-titles">
+            Mobile application
+          </p>
+          <p class="application">
+            Booking system
+          </p>
+        </div>
+
+        <div class="col2" id="col-2">
+          <div class="img-col2" id="img-4"></div>
+          <p class="mini-titles">
+            Front End application
+          </p>
+          <p class="application">
+            Juice product homepage
+          </p>
+        </div>
+      </div>
+
+      <p id="w2" class="starter">see more →</p>
+
+    </div>
+
+    <div id="client">
+      <div id="reverse-uno">
+        <div class="team">
+          <div>
+            <div id="tm1" class="team3"></div>
+          </div>
+          <div>
+            <div>
+              <div id="tm2" class="team3"></div>
+            </div>
+            <div>
+              <div id="tm3" class="team3"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="team-text">
+          <p id="c1" class="starter subtitles">Meet the team</p>
+          <p id="c2" class="starter">
+            We are chilled and a laidback team
+          </p>
+          <p id="c3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+      </div>
+
+      <div id="quote">
+        <p id="c4" class="starter subtitles">
+          “Fast and outstanding results. Edie understands their customer’s needs. They have a young and talented team.”
+        </p>
+
+        <img src="assets/team/person4.png" alt="client" id="client-img">
+        <div id="client-details">
+          <p id="c5">
+            Carlos Tran
+          </p>
+          <p id="c6">
+            The Decorate Gatsby
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div id="contact">
+
+      <div class="row rows-con">
+
+        <div>
+          <ol>
+            <li class="contact-link">
+              <a href="#home">
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="contact-link">
+              <a href="#service">
+                <span>Services</span>
+              </a>
+            </li>
+            <li class="contact-link">
+              <a href="#work">
+                <span>Our Works</span>
+              </a>
+            </li>
+            <li class="contact-link">
+              <a href="#client">
+                <span>Clients</span>
+              </a>
+            </li>
+            <li class="contact-link">
+              <a href="#contact">
+                <span>Contact</span>
+              </a>
+            </li>
+          </ol>
+        </div>
+
+        <div>
+          <p id="owner" class="edie">Edie</p>
+          <div class="socials">
+            <img src="assets/social/instagram.svg" alt="instagram">
+            <img src="assets/social/linkedin.svg" alt="linkedin">
+            <img src="assets/social/twitter.svg" alt="twitter">
+          </div>
+        </div>
+
+        <div>
+          <label for="mail-low" id="low">
+            <p id="label-mail" class="starter">Want us to contact you?</p>
+            <span>
+              <input type="email" name="email" class="starter" id="mail-low" placeholder="Email">
+              <input type="button" value="Join" class="starter" id="subbtn-low">
+            </span>
+          </label>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="owner-details">
+      created by <a href="https://devchallenges.io/portfolio/lostgirljourney" target="_blank"
+        id="username">@lostgirljourney</a>
+      -
+      devChallenges.io
+    </div>
+  </footer>
+
+  <script src="vanilla.js" type="text/javascript"></script>
+</body>
+
+</html>
